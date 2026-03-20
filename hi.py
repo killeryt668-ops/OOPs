@@ -38,7 +38,7 @@ class Obj:
                 return self.input()
             else:
                 print("Inavlid choice!!!.try again.")
-                return self.input()+
+                return self.input()
 obj=Obj()
 obj.input()
 obj.ticke()

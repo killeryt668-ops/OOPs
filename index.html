@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMentor AI - Smart Learning Platform for Classes 1-12 & NEET/JEE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-graduation-cap text-primary"></i>
+                <span class="fw-bold">EduMentor</span> <span class="text-primary">AI</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Classes 1-12
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/class/1-5">Primary (1-5)</a></li>
+                            <li><a class="dropdown-item" href="/class/6-8">Middle (6-8)</a></li>
+                            <li><a class="dropdown-item" href="/class/9-10">Secondary (9-10)</a></li>
+                            <li><a class="dropdown-item" href="/class/11-12">Senior Secondary (11-12)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/neet">NEET</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/jee">JEE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How it Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary me-2" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="/register">Sign Up Free</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="margin-top: 76px;">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Learn Smarter with <span class="text-primary">AI</span>
+                    </h1>
+                    <p class="lead mb-4">
+                        Complete learning platform for Classes 1-12, NEET, and JEE. 
+                        Watch YouTube lessons, take timestamped notes, and get personalized guidance.
+                    </p>
+                    <div class="mb-4">
+                        <a href="/register" class="btn btn-primary btn-lg me-2">
+                            <i class="fas fa-rocket"></i> Start Learning Free
+                        </a>
+                        <a href="#demo" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-play"></i> Watch Demo
+                        </a>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-4">
+                            <div class="stat-card">
+                                <h3 class="text-primary">50K+</h3>
+                                <p class="text-muted">Students</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-card">
+                                <h3 class="text-primary">1000+</h3>
+                                <p class="text-muted">Video Lessons</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-card">
+                                <h3 class="text-primary">500+</h3>
+                                <p class="text-muted">Mentors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="https://img.freepik.com/free-vector/online-learning-concept-illustration_114360-1043.jpg" 
+                             alt="Learning Illustration" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Classes -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Browse by Class</h2>
+            <div class="row g-4">
+                <div class="col-md-2">
+                    <a href="/class/1" class="text-decoration-none">
+                        <div class="class-card text-center p-4 bg-white rounded-3 shadow-sm">
+                            <div class="class-icon bg-primary text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px;">
+                                <i class="fas fa-child fa-2x"></i>
+                            </div>
+                            <h5>Class 1-5</h5>
+                            <p class="text-muted small">Foundation</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="/class/6" class="text-decoration-none">
+                        <div class="class-card text-center p-4 bg-white rounded-3 shadow-sm">
+                            <div class="class-icon bg-success text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px;">
+                                <i class="fas fa-user-graduate fa-2x"></i>
+                            </div>
+                            <h5>Class 6-8</h5>
+                            <p class="text-muted small">Middle School</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="/class/9" class="text-decoration-none">
+                        <div class="class-card text-center p-4 bg-white rounded-3 shadow-sm">
+                            <div class="class-icon bg-warning text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px;">
+                                <i class="fas fa-book-open fa-2x"></i>
+                            </div>
+                            <h5>Class 9-10</h5>
+                            <p class="text-muted small">Secondary</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="/class/11" class="text-decoration-none">
+                        <div class="class-card text-center p-4 bg-white rounded-3 shadow-sm">
+                            <div class="class-icon bg-info text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px;">
+                                <i class="fas fa-flask fa-2x"></i>
+                            </div>
+                            <h5>Class 11-12</h5>
+                            <p class="text-muted small">Science/Commerce</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="/neet" class="text-decoration-none">
+                        <div class="class-card text-center p-4 bg-white rounded-3 shadow-sm">
+                            <div class="class-icon bg-danger text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px;">
+                                <i class="fas fa-heartbeat fa-2x"></i>
+                            </div>
+                            <h5>NEET</h5>
+                            <p class="text-muted small">Medical</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="/jee" class="text-decoration-none">
+                        <div class="class-card text-center p-4 bg-white rounded-3 shadow-sm">
+                            <div class="class-icon bg-secondary text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px;">
+                                <i class="fas fa-calculator fa-2x"></i>
+                            </div>
+                            <h5>JEE</h5>
+                            <p class="text-muted small">Engineering</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Why Choose EduMentor AI?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon bg-primary bg-opacity-10 text-primary rounded-3 p-3 mb-3 d-inline-block">
+                            <i class="fas fa-robot fa-3x"></i>
+                        </div>
+                        <h4>AI Learning Analysis</h4>
+                        <p class="text-muted">Our AI analyzes your performance, identifies weak areas, and creates personalized study plans.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon bg-success bg-opacity-10 text-success rounded-3 p-3 mb-3 d-inline-block">
+                            <i class="fas fa-youtube fa-3x"></i>
+                        </div>
+                        <h4>YouTube Integration</h4>
+                        <p class="text-muted">Watch educational videos with timestamped notes. Click any note to jump to that moment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3 d-inline-block">
+                            <i class="fas fa-sticky-note fa-3x"></i>
+                        </div>
+                        <h4>Smart Notes</h4>
+                        <p class="text-muted">Take notes while watching videos. Notes are automatically linked to timestamps.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon bg-info bg-opacity-10 text-info rounded-3 p-3 mb-3 d-inline-block">
+                            <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                        </div>
+                        <h4>Mentor System</h4>
+                        <p class="text-muted">Get guidance from expert mentors who monitor your progress in real-time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon bg-danger bg-opacity-10 text-danger rounded-3 p-3 mb-3 d-inline-block">
+                            <i class="fas fa-eye fa-3x"></i>
+                        </div>
+                        <h4>Live Monitoring</h4>
+                        <p class="text-muted">Mentors can see your learning activity live and provide instant feedback.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="feature-icon bg-purple bg-opacity-10 text-purple rounded-3 p-3 mb-3 d-inline-block">
+                            <i class="fas fa-question-circle fa-3x"></i>
+                        </div>
+                        <h4>NEET/JEE Practice</h4>
+                        <p class="text-muted">2,00,000+ practice questions with video explanations and performance analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">How It Works</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="fw-bold fs-4">1</span>
+                        </div>
+                        <h5>Sign Up</h5>
+                        <p class="text-muted">Create your free account as student or mentor</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="fw-bold fs-4">2</span>
+                        </div>
+                        <h5>Choose Class/Exam</h5>
+                        <p class="text-muted">Select your class (1-12) or exam (NEET/JEE)</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="fw-bold fs-4">3</span>
+                        </div>
+                        <h5>Watch & Learn</h5>
+                        <p class="text-muted">Watch videos, take timestamped notes</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="fw-bold fs-4">4</span>
+                        </div>
+                        <h5>Get Mentored</h5>
+                        <p class="text-muted">Receive personalized guidance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Videos -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Popular Video Lessons</h2>
+            <div class="row g-4" id="popular-videos">
+                <!-- Videos loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">What Students Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-circle me-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0">Rahul Sharma</h6>
+                                <small class="text-muted">Class 12, JEE Aspirant</small>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-0">"The timestamped notes feature is a game-changer! I can instantly jump to any concept I need to revise."</p>
+                        <div class="mt-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" class="rounded-circle me-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0">Priya Patel</h6>
+                                <small class="text-muted">Class 11, NEET Aspirant</small>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-0">"The AI identified my weak areas in Biology and suggested exactly the videos I needed. My scores improved by 30%!"</p>
+                        <div class="mt-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-circle me-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0">Amit Kumar</h6>
+                                <small class="text-muted">Class 10, CBSE</small>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-0">"My mentor checks my progress daily and suggests improvements. It's like having a personal teacher!"</p>
+                        <div class="mt-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Start Your Learning Journey Today</h2>
+            <p class="lead mb-4">Join 50,000+ students who are learning smarter with AI</p>
+            <a href="/register" class="btn btn-light btn-lg me-2">
+                <i class="fas fa-user-plus"></i> Sign Up Free
+            </a>
+            <a href="#features" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-info-circle"></i> Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-graduation-cap text-primary"></i> EduMentor AI</h5>
+                    <p class="text-white-50">Smart learning platform powered by artificial intelligence for Classes 1-12 and NEET/JEE preparation.</p>
+                    <div>
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Classes</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/class/1-5" class="text-white-50">Class 1-5</a></li>
+                        <li><a href="/class/6-8" class="text-white-50">Class 6-8</a></li>
+                        <li><a href="/class/9-10" class="text-white-50">Class 9-10</a></li>
+                        <li><a href="/class/11-12" class="text-white-50">Class 11-12</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Exams</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/neet" class="text-white-50">NEET</a></li>
+                        <li><a href="/jee" class="text-white-50">JEE Main</a></li>
+                        <li><a href="/jee" class="text-white-50">JEE Advanced</a></li>
+                        <li><a href="/boards" class="text-white-50">Board Exams</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">About Us</a></li>
+                        <li><a href="#" class="text-white-50">Careers</a></li>
+                        <li><a href="#" class="text-white-50">Blog</a></li>
+                        <li><a href="#" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Help Center</a></li>
+                        <li><a href="#" class="text-white-50">FAQs</a></li>
+                        <li><a href="#" class="text-white-50">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white-50">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center text-white-50 mb-0">&copy; 2024 EduMentor AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script>
+        // Load popular videos
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/api/search/videos?q=popular')
+                .then(res => res.json())
+                .then(videos => {
+                    const container = document.getElementById('popular-videos');
+                    container.innerHTML = '';
+                    
+                    videos.slice(0, 4).forEach(video => {
+                        container.innerHTML += `
+                            <div class="col-md-3">
+                                <div class="video-card bg-white rounded-3 shadow-sm">
+                                    <div class="thumbnail-wrapper position-relative">
+                                        <img src="${video.thumbnail_url}" class="img-fluid rounded-top" alt="${video.title}">
+                                        <span class="duration-badge position-absolute bottom-0 end-0 bg-dark text-white p-1 m-2 rounded small">${video.duration} min</span>
+                                    </div>
+                                    <div class="p-3">
+                                        <h6 class="fw-bold mb-2">${video.title.substring(0, 50)}...</h6>
+                                        <p class="small text-muted mb-2">${video.channel_name}</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">${video.views} views</small>
+                                            <a href="/video/${video.youtube_id}" class="btn btn-sm btn-primary">Watch Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                });
+        });
+    </script>
+</body>
+</html>

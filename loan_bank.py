@@ -1,10 +1,7 @@
 class Bank:
-    def __init__(self,rafeeq=0):
-        self.rafeeq=rafeeq
-        #self.name=name
-        #self.year=year
-        #self.amount=amount
-        #self.salry=salary
+    def __init__(self,tol=0):
+        self.tol=tol
+        
     def detail_collect(self):
         
         self.name=input("enter your name:")
@@ -22,7 +19,7 @@ class Bank:
         self.year
         self.salary
         self.req
-        self.rafeeq
+        self.tol
         if self.salary>=15000 and self.year<1:
             self.rafeeq=self.salary*5
             print("name:",self.name)

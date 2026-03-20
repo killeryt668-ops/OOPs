@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classes - EduMentor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Class {{ class_level }} Subjects</h1>
+        <div class="row" id="subjects"></div>
+    </div>
+    <script>
+        const classLevel = window.location.pathname.split('/').pop();
+        fetch(`/api/classes/${classLevel}/subjects`)
+            .then(res => res.json())
+            .then(subjects => {
+                const container = document.getElementById('subjects');
+                subjects.forEach(subject => {
+                    container.innerHTML += `
+                        <div class="col-md-3 mb-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h1>${subject.icon}</h1>
+                                    <h5>${subject.name}</h5>
+                                    <a href="#" class="btn btn-primary">View Videos</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            });
+    </script>
+</body>
+</html>

@@ -28,8 +28,10 @@ class Stud:
                 self.avg_mark()
             elif c ==3:
                 print("byy")
+                return self.input()
             else:
                 print("invalid choice")
+                
 stud=Stud('rafeq',23,73)
 stud.input()
 stud.display()
