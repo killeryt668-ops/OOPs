@@ -16,4 +16,4 @@ class ShoppingKar:
         self.price
         self.qty
         self.total
-        
+        \]]juooio809o0-

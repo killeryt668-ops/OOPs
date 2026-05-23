@@ -1,34 +1,13 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Classes - EduMentor</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container mt-5">
-        <h1>Class {{ class_level }} Subjects</h1>
-        <div class="row" id="subjects"></div>
-    </div>
-    <script>
-        const classLevel = window.location.pathname.split('/').pop();
-        fetch(`/api/classes/${classLevel}/subjects`)
-            .then(res => res.json())
-            .then(subjects => {
-                const container = document.getElementById('subjects');
-                subjects.forEach(subject => {
-                    container.innerHTML += `
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <h1>${subject.icon}</h1>
-                                    <h5>${subject.name}</h5>
-                                    <a href="#" class="btn btn-primary">View Videos</a>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                });
-            });
-    </script>
-</body>
+    <head>
+        <title>My name is rafeeq</title>
+        <body>
+            <h1> Ths is for rafeeq</h1>
+            <p>i am rafeeq .i am the good boy in kerala and india .and one thung i am proud about my self bcz i am not sure abount my career </p>
+            <p>and you know one thing you don,t know nothing <strong>you are my self</strong>rafeeq is usually
+            search one or two types one thing is<a href=http://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8 target="_blank"> abukka</a> connected this tyope of ann orders and the behavours and sometimes i feel so much tierd and weeky part</p>
+            <li>rafeeq</li>
+            <li>rinsha</li>
+        </body>
+    </head>
 </html>
